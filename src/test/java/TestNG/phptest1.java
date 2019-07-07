@@ -12,7 +12,7 @@ public class phptest1  {
 
     @BeforeMethod
     public void launch() {
-        System.setProperty("webdriver.chrome.driver","chromedriver");
+        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("http://35.244.19.79:32768/");
